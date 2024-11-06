@@ -2,7 +2,7 @@ from typing import Optional, List, Type, TYPE_CHECKING
 
 from wexample_filestate.config_option.children_file_factory_config_option import ChildrenFileFactoryConfigOption
 from wexample_filestate.const.globals import NAME_PATTERN_NO_LEADING_DOT
-from wexample_app.workdir.app_workdir import AppWorkdir
+from wexample_wex_addon_app.workdir.app_workdir import AppWorkdir
 from wexample_config.config_value.callback_render_config_value import CallbackRenderConfigValue
 from wexample_config.const.types import DictConfig
 from wexample_config.options_provider.abstract_options_provider import AbstractOptionsProvider
