@@ -19,6 +19,7 @@ setup(
         'python-dotenv',
         'pydantic',
         'wexample-filestate',
+        'wexample-app',
     ],
     python_requires='>=3.6',
 )

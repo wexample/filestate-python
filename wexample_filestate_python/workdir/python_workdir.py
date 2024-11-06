@@ -2,7 +2,7 @@ from typing import Optional, List, Type, TYPE_CHECKING
 
 from wexample_filestate.config_option.children_file_factory_config_option import ChildrenFileFactoryConfigOption
 from wexample_filestate.const.globals import NAME_PATTERN_NO_LEADING_DOT
-from wexample_wex_addon_app.utils.app_directory_structure import AppDirectoryStructure
+from wexample_app.workdir.app_workdir import AppWorkdir
 from wexample_config.config_value.callback_render_config_value import CallbackRenderConfigValue
 from wexample_config.const.types import DictConfig
 from wexample_config.options_provider.abstract_options_provider import AbstractOptionsProvider
@@ -13,7 +13,7 @@ if TYPE_CHECKING:
     from wexample_filestate.config_option.mixin.item_config_option_mixin import ItemTreeConfigOptionMixin
 
 
-class PythonWorkdir(AppDirectoryStructure):
+class PythonWorkdir(AppWorkdir):
     def get_options_providers(self) -> List[Type["AbstractOptionsProvider"]]:
         from wexample_filestate.options_provider.default_options_provider import DefaultOptionsProvider
         from wexample_filestate_git.options_provider.git_options_provider import GitOptionsProvider
