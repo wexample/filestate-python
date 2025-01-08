@@ -6,7 +6,7 @@ from wexample_wex_addon_app.workdir.app_workdir import AppWorkdir
 from wexample_config.config_value.callback_render_config_value import CallbackRenderConfigValue
 from wexample_config.const.types import DictConfig
 from wexample_config.options_provider.abstract_options_provider import AbstractOptionsProvider
-from wexample_helpers.helpers.string_helper import string_to_snake_case
+from wexample_helpers.helpers.type import string_to_snake_case
 
 if TYPE_CHECKING:
     from wexample_filestate.operations_provider.abstract_operations_provider import AbstractOperationsProvider
